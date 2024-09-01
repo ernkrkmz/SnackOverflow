@@ -33,6 +33,8 @@
 		709747702C84CFB800A0DE65 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097476F2C84CFB800A0DE65 /* NormalButton.swift */; };
 		709747732C84D88800A0DE65 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747722C84D88800A0DE65 /* FontSize.swift */; };
 		709747752C84D95F00A0DE65 /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747742C84D95F00A0DE65 /* OnboardModel.swift */; };
+		709747782C850E6400A0DE65 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747772C850E6400A0DE65 /* LoginView.swift */; };
+		7097477B2C851CB000A0DE65 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097477A2C851CB000A0DE65 /* TextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		7097476F2C84CFB800A0DE65 /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
 		709747722C84D88800A0DE65 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		709747742C84D95F00A0DE65 /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
+		709747772C850E6400A0DE65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7097477A2C851CB000A0DE65 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		709747352C84821B00A0DE65 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				709747792C851C8000A0DE65 /* ViewModifiers */,
 				709747712C84D87B00A0DE65 /* Fonts */,
 				709747522C84B89500A0DE65 /* Local */,
 				709747462C84924F00A0DE65 /* Extension */,
@@ -152,6 +157,7 @@
 		709747392C84827100A0DE65 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				709747762C850E5100A0DE65 /* Login */,
 				7097476C2C84CD9000A0DE65 /* Onboard */,
 				7097473A2C84829700A0DE65 /* Welcome */,
 			);
@@ -253,6 +259,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		709747762C850E5100A0DE65 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				709747772C850E6400A0DE65 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		709747792C851C8000A0DE65 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				7097477A2C851CB000A0DE65 /* TextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +356,7 @@
 				7097474B2C8492DF00A0DE65 /* Icons.swift in Sources */,
 				7097475D2C84BEE300A0DE65 /* Custom_Edgeinserts.swift in Sources */,
 				709747752C84D95F00A0DE65 /* OnboardModel.swift in Sources */,
+				709747782C850E6400A0DE65 /* LoginView.swift in Sources */,
 				7097475B2C84BDF000A0DE65 /* GoogleButton.swift in Sources */,
 				709747632C84C39600A0DE65 /* AppleButton.swift in Sources */,
 				709747592C84BB2700A0DE65 /* LocalKeys.swift in Sources */,
@@ -342,6 +365,7 @@
 				709747702C84CFB800A0DE65 /* NormalButton.swift in Sources */,
 				709747612C84C2A500A0DE65 /* Radius.swift in Sources */,
 				7097474F2C849BB500A0DE65 /* FacebookButton.swift in Sources */,
+				7097477B2C851CB000A0DE65 /* TextFieldModifier.swift in Sources */,
 				709747662C84C53700A0DE65 /* ViewSize.swift in Sources */,
 				7097475F2C84BF2B00A0DE65 /* PagePadidngs.swift in Sources */,
 				709747452C84884C00A0DE65 /* Images.swift in Sources */,

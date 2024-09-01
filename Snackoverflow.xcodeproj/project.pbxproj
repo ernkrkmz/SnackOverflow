@@ -29,6 +29,10 @@
 		709747662C84C53700A0DE65 /* ViewSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747652C84C53700A0DE65 /* ViewSize.swift */; };
 		709747692C84C59B00A0DE65 /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747682C84C59B00A0DE65 /* EmailButton.swift */; };
 		7097476B2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097476A2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift */; };
+		7097476E2C84CDAA00A0DE65 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097476D2C84CDAA00A0DE65 /* OnboardView.swift */; };
+		709747702C84CFB800A0DE65 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097476F2C84CFB800A0DE65 /* NormalButton.swift */; };
+		709747732C84D88800A0DE65 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747722C84D88800A0DE65 /* FontSize.swift */; };
+		709747752C84D95F00A0DE65 /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747742C84D95F00A0DE65 /* OnboardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		709747652C84C53700A0DE65 /* ViewSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSize.swift; sourceTree = "<group>"; };
 		709747682C84C59B00A0DE65 /* EmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
 		7097476A2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSize_GeometryProxy.swift; sourceTree = "<group>"; };
+		7097476D2C84CDAA00A0DE65 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		7097476F2C84CFB800A0DE65 /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
+		709747722C84D88800A0DE65 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		709747742C84D95F00A0DE65 /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 		709747352C84821B00A0DE65 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				709747712C84D87B00A0DE65 /* Fonts */,
 				709747522C84B89500A0DE65 /* Local */,
 				709747462C84924F00A0DE65 /* Extension */,
 				709747422C84882F00A0DE65 /* Enums */,
@@ -143,6 +152,7 @@
 		709747392C84827100A0DE65 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				7097476C2C84CD9000A0DE65 /* Onboard */,
 				7097473A2C84829700A0DE65 /* Welcome */,
 			);
 			path = Authentication;
@@ -204,6 +214,7 @@
 				7097475A2C84BDF000A0DE65 /* GoogleButton.swift */,
 				709747622C84C39600A0DE65 /* AppleButton.swift */,
 				709747682C84C59B00A0DE65 /* EmailButton.swift */,
+				7097476F2C84CFB800A0DE65 /* NormalButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -223,6 +234,23 @@
 				709747652C84C53700A0DE65 /* ViewSize.swift */,
 			);
 			path = Size;
+			sourceTree = "<group>";
+		};
+		7097476C2C84CD9000A0DE65 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				7097476D2C84CDAA00A0DE65 /* OnboardView.swift */,
+				709747742C84D95F00A0DE65 /* OnboardModel.swift */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		709747712C84D87B00A0DE65 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				709747722C84D88800A0DE65 /* FontSize.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,9 +333,13 @@
 				709747482C84926200A0DE65 /* Colors.swift in Sources */,
 				7097474B2C8492DF00A0DE65 /* Icons.swift in Sources */,
 				7097475D2C84BEE300A0DE65 /* Custom_Edgeinserts.swift in Sources */,
+				709747752C84D95F00A0DE65 /* OnboardModel.swift in Sources */,
 				7097475B2C84BDF000A0DE65 /* GoogleButton.swift in Sources */,
 				709747632C84C39600A0DE65 /* AppleButton.swift in Sources */,
 				709747592C84BB2700A0DE65 /* LocalKeys.swift in Sources */,
+				7097476E2C84CDAA00A0DE65 /* OnboardView.swift in Sources */,
+				709747732C84D88800A0DE65 /* FontSize.swift in Sources */,
+				709747702C84CFB800A0DE65 /* NormalButton.swift in Sources */,
 				709747612C84C2A500A0DE65 /* Radius.swift in Sources */,
 				7097474F2C849BB500A0DE65 /* FacebookButton.swift in Sources */,
 				709747662C84C53700A0DE65 /* ViewSize.swift in Sources */,

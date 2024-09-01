@@ -33,16 +33,22 @@ private struct BodyView: View {
             
             VStack {
                 Spacer()
+                
                 Image(Icons.appLogo.rawValue)
                     .resizable()
                     .frame(width: 150,height: 150).colorInvert()
                 Spacer()
+                
                 FacebookButton(onTap: {})
                 GoogleButton(onTap: {})
                 AppleButton(onTap: {})
+                
                 Divider().frame(height: DividerViewSize.normal).padding(.all,PagePadidng.all.normal.rawValue)
+                
                 EmailButton(onTap: {})
+                
                 Spacer().frame(height: geometry.dh(height: 0.05))
+                
             }.padding(.paddingAll)
         }
     }

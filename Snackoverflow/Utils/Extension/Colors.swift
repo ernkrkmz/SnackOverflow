@@ -10,5 +10,7 @@ import SwiftUI
 extension Color {
     public var deepSkyBlue : Color { Color("deepSkyBlue") }
     public var peach : Color { Color("peach") }
+    public var clooney : Color { Color("clooney") }
+
     
 }

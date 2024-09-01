@@ -10,6 +10,6 @@ import Foundation
 enum Icons : String {
     case appLogo = "ic_app_logo"
     case facebookLogo = "ic_facebook"
-    case googleLogo = "ic=google"
+    case googleLogo = "ic_google"
     case appleLogo = "ic_apple"
 }

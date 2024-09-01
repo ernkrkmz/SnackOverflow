@@ -1,12 +1,12 @@
 //
-//  FacebookButton.swift
+//  EmailButton.swift
 //  Snackoverflow
 //
 //  Created by Eren Korkmaz on 1.09.2024.
 //
 
 import SwiftUI
-struct FacebookButton: View {
+struct EmailButton: View {
     var onTap : () -> Void
     
     var body: some View {
@@ -15,23 +15,23 @@ struct FacebookButton: View {
         }
     label: {
         HStack{
-            Image(Icons.facebookLogo.rawValue).resizable().frame(width: 30, height: 30)
-            Text(LocalKeys.Auth.facebook.rawValue.locale())
             Spacer()
-        }.tint(.white)
-            .background(.deepSkyBlue)
+            Text(LocalKeys.Auth.custom.rawValue.locale())
+            Spacer()
+        }.tint(.peach)
+            .background(.white)
             .font(.title2)
             .padding(.all, PagePadidng.all.normal.rawValue)
         
-    }       .background(.deepSkyBlue)
+    }       .background(.white)
             .buttonBorderShape(.roundedRectangle)
-            .controlSize(.large)            
+            .controlSize(.large)
             .cornerRadius(RadiusItems.normal)
 
     }
 }
-struct FacebookButton_Previews : PreviewProvider {
+struct EmailButton_Previews : PreviewProvider {
     static var previews: some View {
-        FacebookButton(onTap: { })
+        EmailButton(onTap: { })
     }
 }

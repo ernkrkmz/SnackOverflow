@@ -19,6 +19,16 @@
 		7097474B2C8492DF00A0DE65 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097474A2C8492DF00A0DE65 /* Icons.swift */; };
 		7097474F2C849BB500A0DE65 /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097474E2C849BB500A0DE65 /* FacebookButton.swift */; };
 		709747512C84B5AF00A0DE65 /* EdgeInserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747502C84B5AF00A0DE65 /* EdgeInserts.swift */; };
+		709747572C84B8FC00A0DE65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 709747552C84B8FC00A0DE65 /* Localizable.strings */; };
+		709747592C84BB2700A0DE65 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747582C84BB2700A0DE65 /* LocalKeys.swift */; };
+		7097475B2C84BDF000A0DE65 /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097475A2C84BDF000A0DE65 /* GoogleButton.swift */; };
+		7097475D2C84BEE300A0DE65 /* Custom_Edgeinserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097475C2C84BEE300A0DE65 /* Custom_Edgeinserts.swift */; };
+		7097475F2C84BF2B00A0DE65 /* PagePadidngs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097475E2C84BF2B00A0DE65 /* PagePadidngs.swift */; };
+		709747612C84C2A500A0DE65 /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747602C84C2A500A0DE65 /* Radius.swift */; };
+		709747632C84C39600A0DE65 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747622C84C39600A0DE65 /* AppleButton.swift */; };
+		709747662C84C53700A0DE65 /* ViewSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747652C84C53700A0DE65 /* ViewSize.swift */; };
+		709747692C84C59B00A0DE65 /* EmailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747682C84C59B00A0DE65 /* EmailButton.swift */; };
+		7097476B2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097476A2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +45,16 @@
 		7097474A2C8492DF00A0DE65 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		7097474E2C849BB500A0DE65 /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
 		709747502C84B5AF00A0DE65 /* EdgeInserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInserts.swift; sourceTree = "<group>"; };
+		709747562C84B8FC00A0DE65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		709747582C84BB2700A0DE65 /* LocalKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalKeys.swift; sourceTree = "<group>"; };
+		7097475A2C84BDF000A0DE65 /* GoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
+		7097475C2C84BEE300A0DE65 /* Custom_Edgeinserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Edgeinserts.swift; sourceTree = "<group>"; };
+		7097475E2C84BF2B00A0DE65 /* PagePadidngs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagePadidngs.swift; sourceTree = "<group>"; };
+		709747602C84C2A500A0DE65 /* Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
+		709747622C84C39600A0DE65 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
+		709747652C84C53700A0DE65 /* ViewSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSize.swift; sourceTree = "<group>"; };
+		709747682C84C59B00A0DE65 /* EmailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailButton.swift; sourceTree = "<group>"; };
+		7097476A2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSize_GeometryProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +109,7 @@
 		709747352C84821B00A0DE65 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				709747522C84B89500A0DE65 /* Local */,
 				709747462C84924F00A0DE65 /* Extension */,
 				709747422C84882F00A0DE65 /* Enums */,
 			);
@@ -148,8 +169,11 @@
 		709747422C84882F00A0DE65 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				709747642C84C52C00A0DE65 /* Size */,
 				709747442C84884C00A0DE65 /* Images.swift */,
 				7097474A2C8492DF00A0DE65 /* Icons.swift */,
+				7097475E2C84BF2B00A0DE65 /* PagePadidngs.swift */,
+				709747602C84C2A500A0DE65 /* Radius.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -157,8 +181,10 @@
 		709747462C84924F00A0DE65 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7097475C2C84BEE300A0DE65 /* Custom_Edgeinserts.swift */,
 				709747472C84926200A0DE65 /* Colors.swift */,
 				709747502C84B5AF00A0DE65 /* EdgeInserts.swift */,
+				7097476A2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -175,8 +201,28 @@
 			isa = PBXGroup;
 			children = (
 				7097474E2C849BB500A0DE65 /* FacebookButton.swift */,
+				7097475A2C84BDF000A0DE65 /* GoogleButton.swift */,
+				709747622C84C39600A0DE65 /* AppleButton.swift */,
+				709747682C84C59B00A0DE65 /* EmailButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		709747522C84B89500A0DE65 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				709747552C84B8FC00A0DE65 /* Localizable.strings */,
+				709747582C84BB2700A0DE65 /* LocalKeys.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		709747642C84C52C00A0DE65 /* Size */ = {
+			isa = PBXGroup;
+			children = (
+				709747652C84C53700A0DE65 /* ViewSize.swift */,
+			);
+			path = Size;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7097472F2C8481F200A0DE65 /* Preview Assets.xcassets in Resources */,
+				709747572C84B8FC00A0DE65 /* Localizable.strings in Resources */,
 				709747402C8484CA00A0DE65 /* Images.xcassets in Resources */,
 				7097472C2C8481F200A0DE65 /* Assets.xcassets in Resources */,
 				7097473E2C8484A400A0DE65 /* Colors.xcassets in Resources */,
@@ -251,11 +298,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7097476B2C84CBCA00A0DE65 /* DynamicSize_GeometryProxy.swift in Sources */,
+				709747692C84C59B00A0DE65 /* EmailButton.swift in Sources */,
 				7097472A2C8481F100A0DE65 /* ContentView.swift in Sources */,
 				709747512C84B5AF00A0DE65 /* EdgeInserts.swift in Sources */,
 				709747482C84926200A0DE65 /* Colors.swift in Sources */,
 				7097474B2C8492DF00A0DE65 /* Icons.swift in Sources */,
+				7097475D2C84BEE300A0DE65 /* Custom_Edgeinserts.swift in Sources */,
+				7097475B2C84BDF000A0DE65 /* GoogleButton.swift in Sources */,
+				709747632C84C39600A0DE65 /* AppleButton.swift in Sources */,
+				709747592C84BB2700A0DE65 /* LocalKeys.swift in Sources */,
+				709747612C84C2A500A0DE65 /* Radius.swift in Sources */,
 				7097474F2C849BB500A0DE65 /* FacebookButton.swift in Sources */,
+				709747662C84C53700A0DE65 /* ViewSize.swift in Sources */,
+				7097475F2C84BF2B00A0DE65 /* PagePadidngs.swift in Sources */,
 				709747452C84884C00A0DE65 /* Images.swift in Sources */,
 				709747282C8481F100A0DE65 /* SnackoverflowApp.swift in Sources */,
 				7097473C2C8482D500A0DE65 /* WellcomeView.swift in Sources */,
@@ -263,6 +319,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		709747552C84B8FC00A0DE65 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				709747562C84B8FC00A0DE65 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		709747302C8481F200A0DE65 /* Debug */ = {

@@ -1,12 +1,12 @@
 //
-//  FacebookButton.swift
+//  AppleButton.swift
 //  Snackoverflow
 //
 //  Created by Eren Korkmaz on 1.09.2024.
 //
 
 import SwiftUI
-struct FacebookButton: View {
+struct AppleButton: View {
     var onTap : () -> Void
     
     var body: some View {
@@ -15,23 +15,23 @@ struct FacebookButton: View {
         }
     label: {
         HStack{
-            Image(Icons.facebookLogo.rawValue).resizable().frame(width: 30, height: 30)
-            Text(LocalKeys.Auth.facebook.rawValue.locale())
+            Image(Icons.appleLogo.rawValue).resizable().frame(width: 30, height: 30).colorInvert()
+            Text(LocalKeys.Auth.apple.rawValue.locale())
             Spacer()
         }.tint(.white)
-            .background(.deepSkyBlue)
+            .background(.black)
             .font(.title2)
             .padding(.all, PagePadidng.all.normal.rawValue)
         
-    }       .background(.deepSkyBlue)
+    }       .background(.black)
             .buttonBorderShape(.roundedRectangle)
-            .controlSize(.large)            
+            .controlSize(.large)
             .cornerRadius(RadiusItems.normal)
 
     }
 }
-struct FacebookButton_Previews : PreviewProvider {
+struct AppleButton_Previews : PreviewProvider {
     static var previews: some View {
-        FacebookButton(onTap: { })
+        AppleButton(onTap: { })
     }
 }

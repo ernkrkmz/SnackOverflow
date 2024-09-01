@@ -12,23 +12,40 @@ struct WellcomeView: View {
         ZStack{
             Image(Images.juice.rawValue).resizable()
             Color("black35")
-            VStack {
-                Image(Icons.appLogo.rawValue)
-                    .resizable()
-                .frame(width: 150,height: 150).colorInvert()
-                
-                FacebookButton(onTap: {})
-                
-            }.padding(.paddingAll)
+            BodyView()
             
         }
     }
 }
 
 #Preview {
-    WellcomeView().statusBar(hidden: true)
+    WellcomeView().statusBar(hidden: true).ignoresSafeArea(.all)
 }
 
 
+
+
+
+private struct BodyView: View {
+    var body: some View {
+        GeometryReader { geometry in
+            
+            
+            VStack {
+                Spacer()
+                Image(Icons.appLogo.rawValue)
+                    .resizable()
+                    .frame(width: 150,height: 150).colorInvert()
+                Spacer()
+                FacebookButton(onTap: {})
+                GoogleButton(onTap: {})
+                AppleButton(onTap: {})
+                Divider().frame(height: DividerViewSize.normal).padding(.all,PagePadidng.all.normal.rawValue)
+                EmailButton(onTap: {})
+                Spacer().frame(height: geometry.dh(height: 0.05))
+            }.padding(.paddingAll)
+        }
+    }
+}
 
 

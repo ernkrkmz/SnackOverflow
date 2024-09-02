@@ -11,7 +11,7 @@ import SwiftUI
 struct SnackoverflowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardView()
         }
     }
 }

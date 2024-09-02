@@ -9,44 +9,60 @@ import SwiftUI
 
 struct OnboardView: View {
     
-    @State var currentIndex : Int = 0
-
+    @StateObject var onboardViewModel = OnboardViewModel()
+    
+    //    @State var currentIndex : Int = 0
+    
     func count() -> Int {
         return OnboardModel.items.count - 1
     }
     var body: some View {
         
         
-        GeometryReader { geometry in
-            VStack {
-                Spacer()
-                TabView(
-                    selection: $currentIndex ,
-                    content: {
-                    ForEach((0...count()), id: \.self) { value in
-                        SliderCard(model: OnboardModel.items[value])
-                    }
-                }).tabViewStyle(.page(indexDisplayMode: .never))
-                    .frame(width: geometry.dw(width: 0.45) , height: geometry.dh(height: 0.55))
-                
-                Spacer()
-                
-                HStack{
-                    ForEach((0...count()), id: \.self) { index in
-                        if index == currentIndex {
-                            IndicatoreRectangle(width: geometry.dw(width: 0.06))
-                        }else {
-                            IndicatoreRectangle(width: geometry.dw(width: 0.03))
+        NavigationView {
+            GeometryReader { geometry in
+                VStack {
+                    Spacer()
+                    TabView(
+                        selection: $onboardViewModel.currentIndex ,
+                        content: {
+                            ForEach((0...count()), id: \.self) { value in
+                                SliderCard(model: OnboardModel.items[value])
+                            }
+                        }).tabViewStyle(.page(indexDisplayMode: .never))
+                        .frame(width: geometry.dw(width: 0.45) , height: geometry.dh(height: 0.55))
+                    
+                    Spacer()
+                    
+                    HStack{
+                        ForEach((0...count()), id: \.self) { index in
+                            if index == onboardViewModel.currentIndex {
+                                IndicatoreRectangle(width: geometry.dw(width: 0.06))
+                            }else {
+                                IndicatoreRectangle(width: geometry.dw(width: 0.03))
+                            }
+                        }
+                    }.frame(height: geometry.dh(height: 0.01)).foregroundColor(.clooney)
+                    
+                    
+                    NavigationLink(isActive: $onboardViewModel.isHomeRedirect){
+                        WellcomeView().ignoresSafeArea(.all)
+                            .navigationBarHidden(true)
+                    } label: {
+                        NormalButton(onTap: {
+                            onboardViewModel.saveUserLoginAndRedirect()
+                        }, title: LocalKeys.Buttons.getStarted.rawValue)
+                        .padding(.all,PagePadidng.all.normal.rawValue)
+                        .onAppear{
+                            onboardViewModel.checkUserFirsthLogin()
                         }
                     }
-                }.frame(height: geometry.dh(height: 0.01)).foregroundColor(.clooney)
-
-                
-                NormalButton(onTap: {}, title: LocalKeys.Buttons.getStarted.rawValue)
-                    .padding(.all,PagePadidng.all.normal.rawValue)
+                    
+                    
+                }
             }
         }
-       
+        
     }
 }
 
@@ -66,7 +82,7 @@ private struct SliderCard : View {
         VStack {
             Image(model.imageName).resizable()
             Spacer()
-            Text(model.description).font(.system(size: FontSize.LargeTitle, weight: .semibold)).multilineTextAlignment(.center).foregroundColor(.peach)
+            Text(model.description).font(.system(size: FontSize.LargeTitle, weight: .semibold)).multilineTextAlignment(.center).foregroundColor(.peach).padding(.top, 25)
         }
         
     }

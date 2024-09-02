@@ -35,6 +35,8 @@
 		709747752C84D95F00A0DE65 /* OnboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747742C84D95F00A0DE65 /* OnboardModel.swift */; };
 		709747782C850E6400A0DE65 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747772C850E6400A0DE65 /* LoginView.swift */; };
 		7097477B2C851CB000A0DE65 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097477A2C851CB000A0DE65 /* TextFieldModifier.swift */; };
+		7097477D2C866B9C00A0DE65 /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097477C2C866B9C00A0DE65 /* OnboardViewModel.swift */; };
+		709747802C866D3E00A0DE65 /* UserCacheItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097477F2C866D3E00A0DE65 /* UserCacheItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		709747742C84D95F00A0DE65 /* OnboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardModel.swift; sourceTree = "<group>"; };
 		709747772C850E6400A0DE65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7097477A2C851CB000A0DE65 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		7097477C2C866B9C00A0DE65 /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
+		7097477F2C866D3E00A0DE65 /* UserCacheItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		709747352C84821B00A0DE65 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7097477E2C866D2900A0DE65 /* Cache */,
 				709747792C851C8000A0DE65 /* ViewModifiers */,
 				709747712C84D87B00A0DE65 /* Fonts */,
 				709747522C84B89500A0DE65 /* Local */,
@@ -247,6 +252,7 @@
 			children = (
 				7097476D2C84CDAA00A0DE65 /* OnboardView.swift */,
 				709747742C84D95F00A0DE65 /* OnboardModel.swift */,
+				7097477C2C866B9C00A0DE65 /* OnboardViewModel.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -273,6 +279,14 @@
 				7097477A2C851CB000A0DE65 /* TextFieldModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		7097477E2C866D2900A0DE65 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				7097477F2C866D3E00A0DE65 /* UserCacheItems.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,11 +367,13 @@
 				7097472A2C8481F100A0DE65 /* ContentView.swift in Sources */,
 				709747512C84B5AF00A0DE65 /* EdgeInserts.swift in Sources */,
 				709747482C84926200A0DE65 /* Colors.swift in Sources */,
+				709747802C866D3E00A0DE65 /* UserCacheItems.swift in Sources */,
 				7097474B2C8492DF00A0DE65 /* Icons.swift in Sources */,
 				7097475D2C84BEE300A0DE65 /* Custom_Edgeinserts.swift in Sources */,
 				709747752C84D95F00A0DE65 /* OnboardModel.swift in Sources */,
 				709747782C850E6400A0DE65 /* LoginView.swift in Sources */,
 				7097475B2C84BDF000A0DE65 /* GoogleButton.swift in Sources */,
+				7097477D2C866B9C00A0DE65 /* OnboardViewModel.swift in Sources */,
 				709747632C84C39600A0DE65 /* AppleButton.swift in Sources */,
 				709747592C84BB2700A0DE65 /* LocalKeys.swift in Sources */,
 				7097476E2C84CDAA00A0DE65 /* OnboardView.swift in Sources */,

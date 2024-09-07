@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @ObservedObject private var viewModel = LoginViewModel()
+    
     var body: some View {
         
             VStack{
+                Text(viewModel.token)
                 Spacer()
                 
                 Icons.appLogo.rawValue.image().resizable().frame(width: 200 ,height: 250)
@@ -21,13 +25,20 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                HTextIconField(hint: "Write Your Email", iconName: "mail").padding(.top,PagePadidng.all.normal.rawValue)
+                HTextIconField(hint: "Write Your Email", iconName: "mail", text: $viewModel.emailValue)
+                    .padding(.top,PagePadidng.all.normal.rawValue)
                 
-                HSecureTextIconField(hint: "Write Your Password", iconName: "lock").padding(.top,PagePadidng.all.normal.rawValue - 8)
+                HSecureTextIconField(hint: "Write Your Password", iconName: "lock", text: $viewModel.passwordValue)
+                    .padding(.top,PagePadidng.all.normal.rawValue - 8)
                 
                 Divider()
                 
-                NormalButton(onTap: {}, title: "Create Account").padding(.top,PagePadidng.all.normal.rawValue)
+                NormalButton(onTap: {
+                    Task{
+                        await viewModel.onLoginUser()
+                    }
+                }, title: "Create Account")
+                    .padding(.top,PagePadidng.all.normal.rawValue)
                 
                 Spacer()
                 
@@ -50,11 +61,12 @@ struct LoginView: View {
 private struct HTextIconField: View {
     let hint : String
     let iconName : String
+    var text : Binding<String>
     var body: some View {
         HStack {
             iconName.image().resizable()
                 .frame(width: 25,height: 25)
-            TextField(hint, text: .constant(""))
+            TextField(hint, text: text)
         }.modifier(TextFieldModifier())
     }
 }
@@ -62,11 +74,13 @@ private struct HTextIconField: View {
 private struct HSecureTextIconField: View {
     let hint : String
     let iconName : String
+    var text : Binding<String>
+
     var body: some View {
         HStack {
             iconName.image().resizable()
                 .frame(width: 25,height: 25)
-            SecureField(hint, text: .constant(""))
+            SecureField(hint, text: text)
         }.modifier(TextFieldModifier())
     }
 }

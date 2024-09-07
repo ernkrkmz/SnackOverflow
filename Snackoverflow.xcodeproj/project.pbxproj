@@ -41,6 +41,8 @@
 		709747872C887E4800A0DE65 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747862C887E4800A0DE65 /* UserResponse.swift */; };
 		709747942C88884A00A0DE65 /* SnackoverflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709747932C88884A00A0DE65 /* SnackoverflowTests.swift */; };
 		7097479C2C8888A000A0DE65 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7097479B2C8888A000A0DE65 /* Alamofire */; };
+		7097479E2C88AAF300A0DE65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097479D2C88AAF300A0DE65 /* LoginViewModel.swift */; };
+		709747A02C88AD2F00A0DE65 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7097479F2C88AD2F00A0DE65 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		709747862C887E4800A0DE65 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		709747912C88884A00A0DE65 /* SnackoverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnackoverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		709747932C88884A00A0DE65 /* SnackoverflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackoverflowTests.swift; sourceTree = "<group>"; };
+		7097479D2C88AAF300A0DE65 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7097479F2C88AD2F00A0DE65 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				709747772C850E6400A0DE65 /* LoginView.swift */,
+				7097479D2C88AAF300A0DE65 /* LoginViewModel.swift */,
+				7097479F2C88AD2F00A0DE65 /* LoginModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -480,8 +486,10 @@
 				709747872C887E4800A0DE65 /* UserResponse.swift in Sources */,
 				709747702C84CFB800A0DE65 /* NormalButton.swift in Sources */,
 				709747612C84C2A500A0DE65 /* Radius.swift in Sources */,
+				7097479E2C88AAF300A0DE65 /* LoginViewModel.swift in Sources */,
 				7097474F2C849BB500A0DE65 /* FacebookButton.swift in Sources */,
 				7097477B2C851CB000A0DE65 /* TextFieldModifier.swift in Sources */,
+				709747A02C88AD2F00A0DE65 /* LoginModel.swift in Sources */,
 				709747662C84C53700A0DE65 /* ViewSize.swift in Sources */,
 				7097475F2C84BF2B00A0DE65 /* PagePadidngs.swift in Sources */,
 				709747452C84884C00A0DE65 /* Images.swift in Sources */,

@@ -21,7 +21,7 @@ IOS Deployment Target : 17.5
 
   
 ## Screenshots
-
+- https://i.ibb.co/YybqwW4/GIFMaker-me.gif
 ![Uygulama Ekran Görüntüsü](https://i.ibb.co/YybqwW4/GIFMaker-me.gif)
 ![Uygulama Ekran Görüntüsü](https://i.ibb.co/zPDQR9y/Ekran-Resmi-2024-09-07-23-36-10.png)
 
